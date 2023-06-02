@@ -7,7 +7,9 @@ import TrackVisibility from 'react-on-screen';
 export const Skills = () => {
   return (
     <section className="skills" id="skills">
+      
       <Container>
+      <div id="border-skills" className="border-skills">
         <div className="skills-title">
           <h2>Mis Habilidades</h2>
         </div>
@@ -125,9 +127,10 @@ export const Skills = () => {
             </TrackVisibility>
           </Col>
         </Row>
-        <Row>
-        </Row>
+        </div>
       </Container>
+      
+      
     </section>
   );
 };

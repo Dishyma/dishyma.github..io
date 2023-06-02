@@ -10,7 +10,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["Backend Developer"];
+    const toRotate = ["\nBackend Dev."];
     const period = 2000;
 
     useEffect(() => {
@@ -55,9 +55,15 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Bienvenidos a mi portafolio</span>
-                                    <h1>{`Hola, soy Mateo Rojas!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Backend developer" ]'><span className="wrap">{text}</span></span></h1>
+                                    <h1>{`Hi, I'm Mateo Rojas`} </h1>
+                                    <h1>
+                                    <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Backend dev." ]'>
+                                        <span className="wrap">{text}</span>
+                                    </span>
+                                    </h1>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <button onClick={() => console.log('connect')}>Conectemos<ArrowRightCircle size={25} /></button>
+                                    <button className="botonesBanner" onClick={() => console.log('connect')}>Conectemos<ArrowRightCircle size={25} /></button>
+                                    <button className="botonesBanner">Download CV<ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
