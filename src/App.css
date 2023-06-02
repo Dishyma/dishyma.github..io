@@ -191,6 +191,7 @@ span.navbar-text {
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .navbar-text button span {
@@ -276,18 +277,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 220px 0 100px 0;
+  padding: 220px 0 0px 0;
 }
 
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgb(180, 110, 19) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .banner h1 {
@@ -313,16 +315,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   letter-spacing: 0.8px;
   display: inline;
-  margin: 10px;
+  margin: 60px;
   margin-left: 30px;
   align-items: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
-  line-height: 1;
+  line-height: 2;
+}
+
+.banner button:hover{
+  background-color: #fff;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+  color: #121212;
 }
 
 .banner button:hover svg {
@@ -335,15 +352,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @keyframes updown {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 
   50% {
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
 
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 
@@ -354,7 +371,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*#######################################*/
 
 .skills {
-  padding: 40px 0;
+  margin: 0px;
+  padding: 250px 100px;
 }
 
 
@@ -379,7 +397,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 800;
   letter-spacing: 0.8px;
   padding: 10px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border-radius: 10px;
+  background: linear-gradient(90.21deg, rgb(180, 110, 19) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 36px;
   margin-bottom: 40px;
@@ -390,7 +409,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 40px 20px;
+  padding: 20px 0px;
+  border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -399,17 +420,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 
+.skill:hover{
+  background-color: #403069;
+  transition: 0.8s ease-in-out;
+}
+
 .skill svg {
   font-size: 50px;
   color: #fff;
 }
 
 .skill h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 15px;
 }
+
 
 
 
