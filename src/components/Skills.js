@@ -9,7 +9,7 @@ export const Skills = () => {
     
     { icon: DiJava, title: 'Java' },
     { icon: DiPython, title: 'Python' },
-    { icon: SiSpring, title: 'Spring Boot' },
+    { icon: SiSpring, title: 'SpringBoot' },
     { icon: SiFlask, title: 'Flask' },
     { icon: DiMysql, title: 'MySQL' },
     { icon: SiMongodb, title: 'MongoDB' },
@@ -57,15 +57,17 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skills" id="skills">
+    <section className="skills" >
+      <div className="border-skills" id="border-skills" >
       <Container>
-        <div id="border-skills" className="border-skills">
-          <div className="skills-title">
+        <div>
+          <div className="skills-title" id="skills-title">
             <h2>Mis Habilidades</h2>
           </div>
           <Row>{renderSkills()}</Row>
         </div>
       </Container>
+      </div>
     </section>
   );
 };

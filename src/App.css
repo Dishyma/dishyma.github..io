@@ -276,11 +276,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
+  margin-top: 0px;
   padding: 220px 0 0px 0;
 }
 
 .banner .tagline {
+  margin-top: 0px;
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -288,6 +289,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
+  margin-top: 10px;
   display: inline-block;
   border-radius: 10px;
 }
@@ -437,7 +439,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 15px;
 }
 
+@media (max-height: 140rem) {
+  /* Estilos para pantallas con un ancho máximo de 768px */
+  .skill {
+    margin: 10px;
+    padding: 10px 0px;
+  }
 
+  .skill svg {
+    font-size: 8vw;
+  }
+
+  .skill h3 {
+    font-size: 3.5vw;
+  }
+}
 
 
 /*#######################################*/

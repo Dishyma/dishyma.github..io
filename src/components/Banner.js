@@ -47,14 +47,14 @@ export const Banner = () => {
     }
 
     return (
-        <section className="banner" id="home">
-            <Container>
+        <section className="banner">
+            <Container id="home">
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className="tagline">Bienvenidos a mi portafolio</span>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : "" } >
+                                    <span className="tagline" >Bienvenidos a mi portafolio</span>
                                     <h1>{`Hi, I'm Mateo Rojas`} </h1>
                                     <h1>
                                         <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Backend dev." ]'>
