@@ -315,8 +315,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   letter-spacing: 0.8px;
   display: inline;
-  margin: 60px;
-  margin-left: 60px;
+  margin: 10px;
+  margin-left: 10px;
   align-items: center;
   border: 1px;
   border-style: solid;
