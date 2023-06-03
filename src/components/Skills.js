@@ -6,7 +6,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Skills = () => {
   const skills = [
-    
+
     { icon: DiJava, title: 'Java' },
     { icon: DiPython, title: 'Python' },
     { icon: SiSpring, title: 'SpringBoot' },
@@ -57,17 +57,23 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skills" >
-      <div className="border-skills" id="border-skills" >
-      <Container>
-        <div>
-          <div className="skills-title" id="skills-title">
-            <h2>Mis Habilidades</h2>
-          </div>
-          <Row>{renderSkills()}</Row>
+
+    <section className="skills" id="skills-title" >
+      <div className="container">
+        <div className="skills-title" >
+          <h2>Mis Habilidades</h2>
         </div>
-      </Container>
+        <div className="slider">
+          <Container className="prueba">
+            <div>
+              <Row>{renderSkills()}</Row>
+            </div>
+          </Container>
+        </div>
       </div>
+
+
+
     </section>
   );
 };
