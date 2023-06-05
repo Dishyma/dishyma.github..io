@@ -593,7 +593,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border:  rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
@@ -647,6 +647,61 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+
+.prueba2{
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 30px 50px;
+  margin-top: -60px;
+}
+
+.slider-arrows {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.slider-arrows button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slider-arrows button:hover {
+  color: lightgray;
+}
+
+.slider-arrows .custom-arrow {
+  position: relative;
+  padding: 0px;
+}
+
+.slider-arrows .custom-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.slider-arrows .prev-arrow::before {
+  transform: translateY(-50%) rotate(135deg);
+  right: 5px; 
+}
+
+.slider-arrows .next-arrow::before {
+  transform: translateY(-50%) rotate(-45deg);
+  left: 5px; /* Cambio: usar left en lugar de right */
 }
 
 /*#######################################*/
