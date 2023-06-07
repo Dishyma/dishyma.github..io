@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
+import pdfFile from "../assets/pdf/MateoRojasCV.pdf";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -12,6 +13,10 @@ export const Banner = () => {
     const [index, setIndex] = useState(1);
     const toRotate = ["\nBackend Dev."];
     const period = 2000;
+
+    const handleDownload = () => {
+        window.open(pdfFile, "_blank");
+      };
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -63,7 +68,7 @@ export const Banner = () => {
                                     </h1>
                                     <p>Soy un desarrollador de software con experiencia en Java (Spring Boot) y Python (Flask), especializado en el desarrollo de backend y la implementación de APIs RESTful. Además, tengo conocimientos en infraestructura de nube, trabajando con plataformas como AWS, y habilidades en bases de datos SQL (MySQL) y NoSQL (MongoDB). También tengo experiencia en arquitectura de software,permintiendo diseñar soluciones eficientes y escalables, estoy siempre dispuesto a aprender y adoptar nuevas tecnologías para mejorar mis habilidades como desarrollador.</p>
                                     <button className="botonesBanner" onClick={() => console.log('connect')}>Conectemos<ArrowRightCircle size={25} /></button>
-                                    <button className="botonesBanner">Download CV<ArrowRightCircle size={25} /></button>
+                                    <button className="botonesBanner" onClick={handleDownload}>Download CV<ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
