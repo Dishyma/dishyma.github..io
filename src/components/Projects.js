@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+
+import arquitecturaHexa from "../assets/img/ArquitecturaHexagonal.jpg";
+import fastCrud from "../assets/img/FastCrud.png";
+
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
@@ -14,109 +17,53 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Hexagonal Architecture",
+      description: "Crud with Hexagonal Arch",
+      imgUrl: arquitecturaHexa,
+      url: "https://github.com/Dishyma/HexagonalArchitecture"
+    },
+    {
+      title: "FastCrud",
+      description: "Crud with springboot",
+      imgUrl: fastCrud,
+      url: "https://github.com/Dishyma/FastCrud"
+    },
+    {
+      title: "School Web Server",
+      description: "Basic Crud with Java",
       imgUrl: projImg1,
+      url: "https://github.com/Dishyma/schoolWebServer"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Inventario Supermercado",
+      description: "Basic Crud with Java",
       imgUrl: projImg1,
-    },
+      url: "https://github.com/Dishyma/Inventario-Supermercado"
+    }, 
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Python Application",
+      description: "Docker and python application with flask",
       imgUrl: projImg1,
+      url: "https://github.com/Dishyma/PythonApplication"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },{
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Ant Man",
+      description: "Antivirus made with Java",
       imgUrl: projImg1,
+      url: "https://github.com/Dishyma/AntMan"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },{
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Moovie",
+      description: "React app, it uses the movie database",
       imgUrl: projImg1,
-    },
+      url: "https://github.com/Dishyma/moovie"
+    }, 
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    // Add more projects...
+      title: "Inventory",
+      description: "This is a springboot application, for a inventory",
+      imgUrl: projImg1,
+      url: "https://github.com/Dishyma/Inventory"
+    },          
   ];
 
   const projectsPerPage = 6;
