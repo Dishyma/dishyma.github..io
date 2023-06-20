@@ -5,7 +5,11 @@ import projImg1 from "../assets/img/project-img1.png";
 
 import arquitecturaHexa from "../assets/img/ArquitecturaHexagonal.jpg";
 import fastCrud from "../assets/img/FastCrud.png";
-
+import inventario from "../assets/img/inventario.jpg";
+import colegio from "../assets/img/colegio.png";
+import antMan from "../assets/img/antMan.png";
+import moovie from "../assets/img/moovie.png";
+import pyApp from "../assets/img/pythonApplication.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
@@ -31,37 +35,37 @@ export const Projects = () => {
     {
       title: "School Web Server",
       description: "Basic Crud with Java",
-      imgUrl: projImg1,
+      imgUrl: colegio,
       url: "https://github.com/Dishyma/schoolWebServer"
     },
     {
       title: "Inventario Supermercado",
       description: "Basic Crud with Java",
-      imgUrl: projImg1,
+      imgUrl: inventario,
       url: "https://github.com/Dishyma/Inventario-Supermercado"
     }, 
     {
       title: "Python Application",
       description: "Docker and python application with flask",
-      imgUrl: projImg1,
+      imgUrl: pyApp,
       url: "https://github.com/Dishyma/PythonApplication"
     },
     {
       title: "Ant Man",
       description: "Antivirus made with Java",
-      imgUrl: projImg1,
+      imgUrl: antMan,
       url: "https://github.com/Dishyma/AntMan"
     },
     {
       title: "Moovie",
       description: "React app, it uses the movie database",
-      imgUrl: projImg1,
+      imgUrl: moovie,
       url: "https://github.com/Dishyma/moovie"
     }, 
     {
       title: "Inventory",
       description: "This is a springboot application, for a inventory",
-      imgUrl: projImg1,
+      imgUrl: inventario,
       url: "https://github.com/Dishyma/Inventory"
     },          
   ];

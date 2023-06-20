@@ -43,9 +43,9 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="#skills-title" className={activeLink === 'skills-title'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('skills-title')}>Skills</Nav.Link>
-                        <Nav.Link href="#experience-title" className={activeLink === 'experience-title'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('projects')}>Experience</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === 'projects'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <Nav.Link href="#skills-title" className={activeLink === 'skills-title'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('skills-title')}>Habilidades</Nav.Link>
+                        <Nav.Link href="#experience-title" className={activeLink === 'experience-title'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('projects')}>Experiencia</Nav.Link>
+                        <Nav.Link href="#projects" className={activeLink === 'projects'? 'active navbar-link': "navbar-link"} onClick={()=> onUpdateActiveLink('projects')}>Proyectos</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">

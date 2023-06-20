@@ -599,8 +599,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  width: 300px; /* Ancho deseado */
-  height: 200px; /* Alto deseado */
+  width: auto; /* Ancho deseado */
+  height: auto; /* Alto deseado */
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
