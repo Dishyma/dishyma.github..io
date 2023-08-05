@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+
 
 import arquitecturaHexa from "../assets/img/ArquitecturaHexagonal.jpg";
 import fastCrud from "../assets/img/FastCrud.png";
